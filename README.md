@@ -48,6 +48,7 @@ Please note that I do not guarantee this part list to be exhaustive.
 |3 Pin PCB Mount Screw Terminal Block|3||see above|
 |PC case fan|1|[this](https://www.amazon.de/gp/product/B07GB16RK7)||
 |small peace of breadboard|||approx 6x7 holes, for outer sensor||
+|wires|||
 
 Furthermore you need:
 

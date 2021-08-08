@@ -128,7 +128,7 @@ void RHcheck() {                    //Check Humidity Level Function
   oled.print((int)hum_outer); oled.print(" %, ");
   oled.print("TP: ");oled.print((int)tp_outer); oled.println(" C");
 
-  if (1.2 + tp_inner > tp_outer) {  // Account for mesurement- and rounding errors
+  if (0.7 + tp_inner > tp_outer) {  // Account for mesurement- and rounding errors
     Serial.println("Dew Point inner is higher ==> fan OK");
   }
   else {
