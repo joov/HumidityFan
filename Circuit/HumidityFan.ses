@@ -1,0 +1,311 @@
+
+(session HumidityFan.ses
+  (base_design HumidityFan.dsn)
+  (placement
+    (resolution um 10)
+    (component Module:Arduino_Nano
+      (place A1 1803400 -1079500 front 90)
+    )
+    (component "Connector_Wire:SolderWire-1sqmm_1x01_D1.4mm_OD2.7mm"
+      (place H1 1663700 -889000 front 0)
+      (place H3 2044700 -800100 front 0)
+      (place H5 2108200 -800100 front 0)
+      (place H7 1663700 -1054100 front 0)
+      (place H9 1663700 -1117600 front 0)
+    )
+    (component "Connector_Wire:SolderWire-1sqmm_1x01_D1.4mm_OD2.7mm::1"
+      (place H2 1663700 -965200 front 0)
+      (place H4 1981200 -800100 front 0)
+      (place H6 2184400 -800100 front 0)
+      (place H8 1663700 -1181100 front 0)
+    )
+    (component "TerminalBlock:TerminalBlock_Altech_AK300-3_P5.00mm"
+      (place J1 1651000 -762000 front 0)
+    )
+    (component "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm"
+      (place J2 1828800 -762000 front 0)
+    )
+    (component Sensor:Aosong_DHT11_5.5x12.0_P2.54mm
+      (place U1 1892300 -1193800 front 90)
+    )
+    (component MountingHole:MountingHole_3mm
+      (place H10 1562100 -711200 front 0)
+      (place H13 2197100 -1193800 front 0)
+    )
+    (component MountingHole:MountingHole_3mm::1
+      (place H11 1562100 -1193800 front 0)
+      (place H12 2197100 -711200 front 0)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "(5.1.10)-1")
+    )
+    (library_out 
+      (padstack "Via[0-1]_800:400_um"
+        (shape
+          (circle F.Cu 8000 0 0)
+        )
+        (shape
+          (circle B.Cu 8000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net "Net-(A1-Pad4)"
+        (wire
+          (path F.Cu 2500
+            1879600 -1079500
+            1879600 -1068247
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            2044700 -800100
+            1968500 -876300
+            1968500 -979347
+            1879600 -1068247
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1879600 -1104900
+            1879600 -1079500
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1968500 -1193800
+            1879600 -1104900
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1663700 -1181100
+            1803400 -1181100
+            1879600 -1104900
+          )
+        )
+      )
+      (net "Net-(A1-Pad5)"
+        (wire
+          (path F.Cu 2500
+            1892300 -1193800
+            1892300 -1103453
+            1905000 -1090753
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1905000 -1079500
+            1905000 -1068247
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1651000 -762000
+            1651000 -814247
+            1905000 -1068247
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1905000 -1079500
+            1905000 -1090753
+          )
+        )
+      )
+      (net "Net-(A1-Pad6)"
+        (wire
+          (path F.Cu 2500
+            1930400 -1079500
+            1930400 -1090753
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1917700 -1193800
+            1917700 -1103453
+            1930400 -1090753
+          )
+        )
+      )
+      (net "Net-(A1-Pad7)"
+        (wire
+          (path B.Cu 2500
+            1955800 -1079500
+            1944547 -1079500
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1701000 -762000
+            1701000 -840677
+            1928570 -1068247
+            1936108 -1068247
+            1944547 -1076686
+            1944547 -1079500
+          )
+        )
+      )
+      (net "Net-(A1-Pad23)"
+        (wire
+          (path F.Cu 2500
+            1981200 -927100
+            1992453 -927100
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            2184400 -800100
+            2068653 -915847
+            2000892 -915847
+            1992453 -924286
+            1992453 -927100
+          )
+        )
+      )
+      (net "Net-(A1-Pad24)"
+        (wire
+          (path B.Cu 2500
+            1955800 -927100
+            1967053 -927100
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            2108200 -800100
+            2091240 -800100
+            1967053 -924287
+            1967053 -927100
+          )
+        )
+      )
+      (net "Net-(A1-Pad27)"
+        (wire
+          (path F.Cu 2500
+            1879600 -927100
+            1868347 -927100
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1663700 -1054100
+            1743275 -1054100
+            1868347 -929028
+            1868347 -927100
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1981200 -800100
+            1879600 -901700
+            1879600 -927100
+          )
+        )
+      )
+      (net "Net-(A1-Pad29)"
+        (wire
+          (path B.Cu 2500
+            1828800 -927100
+            1828800 -915847
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1878800 -762000
+            1878800 -865847
+            1828800 -915847
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1828800 -927100
+            1817547 -927100
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1663700 -965200
+            1782260 -965200
+            1817547 -929913
+            1817547 -927100
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1878800 -762000
+            1865647 -762000
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1751000 -762000
+            1764153 -762000
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1764153 -762000
+            1787207 -738946
+            1842593 -738946
+            1865647 -762000
+          )
+        )
+      )
+      (net "Net-(A1-Pad30)"
+        (wire
+          (path B.Cu 2500
+            1803400 -927100
+            1803400 -915847
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1828800 -762000
+            1815647 -762000
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1815647 -762000
+            1815647 -903600
+            1803400 -915847
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1663700 -889000
+            1701800 -927100
+            1803400 -927100
+          )
+        )
+      )
+      (net "Net-(A1-Pad16)"
+        (wire
+          (path F.Cu 2500
+            2159000 -927100
+            2147747 -927100
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1663700 -1117600
+            1857767 -1117600
+            1892300 -1083067
+            1892300 -1075657
+            2029604 -938353
+            2139308 -938353
+            2147747 -929914
+            2147747 -927100
+          )
+        )
+      )
+    )
+  )
+)
