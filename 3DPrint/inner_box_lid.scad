@@ -4,7 +4,7 @@
 
 inside_width = 62;
 inside_length = 95;
-inside_height = 30;
+inside_height = 35;
 pole_height=6;
 pole_wall_dist = 4.5;
 
