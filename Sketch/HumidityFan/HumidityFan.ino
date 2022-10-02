@@ -21,7 +21,7 @@ unsigned long delayTime=1800000-fanTime; // 30 minutes-fanTime
 SimpleDHT11 dht11;
 
 
-// Defines for OLES SDD1306
+// Defines for OLED SDD1306
 #include <SSD1306Ascii.h>
 #include <SSD1306AsciiAvrI2c.h>
 

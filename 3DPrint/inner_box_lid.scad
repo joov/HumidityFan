@@ -53,12 +53,15 @@ union(){
     
 }
 
- // Poles for OLED
+    // Poles for OLED
     doPole([wall_thickness+31-2-3.5, wall_thickness+21-1],1.4) ;
     doPole([wall_thickness+31-2-3.5, wall_thickness+21-1+27.5-4],1.4) ;
     doPole([wall_thickness+31-2-3.5+28-4, wall_thickness+21-1],2) ;
     doPole([wall_thickness+31-2-3.5+28-4, wall_thickness+21-1+27.5-4],1.4) ;
 
+    // Clips for OLED
+    color([0,1,0])translate([30.8+wall_thickness+20,20+wall_thickness,0])rotate([0,0,90])cube([wall_thickness,20,4+wall_thickness]);
+    color([0,1,0])translate([30.8+wall_thickness+20,20+28.1+wall_thickness,0])rotate([0,0,90])cube([wall_thickness,20,4+wall_thickness]);
 
 
 //translate([-inside_width-3*wall_thickness,0,0]) {
